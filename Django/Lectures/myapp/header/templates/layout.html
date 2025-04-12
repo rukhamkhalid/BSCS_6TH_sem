@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <ul style="display: flex; justify-content: space-between;">
+    <li><a href=" {% url 'home' %}">home</a></li>
+    <li><a href=" {% url 'code' %}">code</a></li>
+    <li><a href=" {% url 'courses' %}">courses</a></li>
+    <li><a href=" {% url 'profiles' %}">profiles</a></li>
+    <li><a href=" {% url 'about' %}">about</a></li>
+   </ul> 
+   {% block header %}
+
+   {% endblock %}
+</body>
+</html>
